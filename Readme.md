@@ -116,12 +116,9 @@
    - After optimization:
      ```javascript
    function calculate(a, b, c) {
-    var result1 = b + a * c;
-    // Reordered arithmetic operation 3
-    var result2 = (b - a) / c;
-    // Reordered arithmetic operation 2
-    return result2 + result1;
-    // Reordered arithmetic operation 1
+    var result1 = b + a * c; // Reordered arithmetic operation 3
+    var result2 = (b - a) / c;// Reordered arithmetic operation 2
+    return result2 + result1;// Reordered arithmetic operation 1
     }
 
 8. **Code Motion**:
