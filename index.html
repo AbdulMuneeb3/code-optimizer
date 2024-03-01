@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Optimizer</h1>
+        <textarea id="inputCode" placeholder="Enter your code here..." rows="10" cols="50"></textarea>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" id="constantFolding" > <label for="constantFolding">Constant Folding</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Constant folding evaluates constant expressions at compile time.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="deadCodeElimination" > <label for="deadCodeElimination">Dead Code Elimination</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Removes code that is never executed.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="commonSubexpressionElimination" > <label for="commonSubexpressionElimination">Common Subexpression Elimination</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Optimizes repeated calculations with the same result.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="loopOptimization" > <label for="loopOptimization">Loop Optimization</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Optimizes loop constructs to improve performance.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="inlineExpansion" > <label for="inlineExpansion">Inline Expansion</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Replaces function calls with the function body to reduce overhead.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="registerAllocation"> <label for="registerAllocation">Register Allocation</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Optimizes memory usage by allocating variables to CPU registers.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="instructionScheduling"> <label for="instructionScheduling">Instruction Scheduling</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Reorders instructions to optimize CPU pipeline usage.</div>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="codeMotion"> <label for="codeMotion">Code Motion</label>
+                <span class="tooltip">?</span>
+                <div class="tooltip-text">Moves code to eliminate redundant calculations or memory accesses.</div>
+            </div>
+        </div>
+        <button onclick="optimizeCode()">
+            <span class="span-mother">
+              <span>O</span>
+              <span>P</span>
+              <span>T</span>
+              <span>I</span>
+              <span>M</span>
+              <span>I</span>
+              <span>Z</span>
+              <span>E</span>
+            </span>
+            <span class="span-mother2">
+                <span>O</span>
+                <span>P</span>
+                <span>T</span>
+                <span>I</span>
+                <span>M</span>
+                <span>I</span>
+                <span>Z</span>
+                <span>E</span>
+            </span>
+          </button>
+          
+        <br>
+        <h1>Result</h1>
+        <pre id="optimizedCode"></pre>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
